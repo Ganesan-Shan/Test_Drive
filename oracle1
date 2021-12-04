@@ -1,0 +1,8 @@
+#!/bin/bash
+
+var=10
+for i in 0 1 2 3 4 5
+do
+echo $i
+lscfg -vpl $i  | grep -i Network
+done
