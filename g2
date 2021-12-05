@@ -1,5 +1,6 @@
 welcome to devops world
 Have a nice days 
+<<<<<<< .merge_file_8Yo90H
 <<<<<<< .merge_file_zYqHhm
 <<<<<<< .merge_file_Rw9EGT
 Devops is one of the leading marketing in IT industry
@@ -13,3 +14,6 @@ again new line added in g2 for merge conflict
 =======
 new line added in g2 
 >>>>>>> .merge_file_X9RFUp
+=======
+new line added in g2 
+>>>>>>> .merge_file_34S6lM
