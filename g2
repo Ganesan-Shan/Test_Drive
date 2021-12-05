@@ -1,5 +1,6 @@
 welcome to devops world
 Have a nice days 
+<<<<<<< .merge_file_rtey6P
 <<<<<<< .merge_file_8Yo90H
 <<<<<<< .merge_file_zYqHhm
 <<<<<<< .merge_file_Rw9EGT
@@ -17,3 +18,6 @@ new line added in g2
 =======
 new line added in g2 
 >>>>>>> .merge_file_34S6lM
+=======
+new line added in g2 
+>>>>>>> .merge_file_ZrfSXS
