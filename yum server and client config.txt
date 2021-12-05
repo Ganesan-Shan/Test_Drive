@@ -1,0 +1,63 @@
+configuring the yum server
+1. redhat installation media ( iso/dvd/pendrive )
+2. copy the contents of media into local directory
+3. configure the repo file 
+
+# mkdir /az-server
+# cd <media dir>
+# cp -rvf *   /az-server
+# ls -l /etc/yum.repos.d
+# cd /etc/yum.repos.d
+# vim server.repo
+[rhel7]
+name=This is AstraZeneca yum repo server
+baseurl=file:///az-server
+gpgcheck=0
+enabled=1
+
+:wq!
+# yum clean all
+# yum repolist
+
+Configuring yum server as http web server 
+to support yum client
+
+1) # yum install http*  -y
+
+2) # yum list http 
+
+3) # systemctl restart httpd
+
+4) # systemctl enable httpd
+
+5) # cd /var/www/html
+
+6) # vim index.html
+    This is AstraZeneca Web page !!!
+   :wq!
+7) # firefox http://localhost
+
+8) # curl -k http://localhost
+
+9) # systemctl stop firewalld
+10) # systemctl disable firewalld
+
+11) ln -s /az-server  /var/www/html
+
+12) setenforce 0   ( disabling SE-Linux )
+
+---------------------------------
+yum client
+
+# cd /etc/yum.repos.d
+# vim client.repo
+ [rhel7]
+ name=this is yum client
+ baseurl=http://node1/az-server
+ gpgcheck=0
+ enabled=1
+:wq!
+
+# yum clean all
+# yum repolist
+# yum install ksh* -y
