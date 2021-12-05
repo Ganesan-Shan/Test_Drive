@@ -1,4 +1,9 @@
 Welcome to git world
 Adding second line in now
+<<<<<<< HEAD
 adding some lines in g1 for git stash validation
  added new line for git conflicit
+=======
+adding the line for stage brach
+added some new line in g1
+>>>>>>> stage
