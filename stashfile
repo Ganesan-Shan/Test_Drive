@@ -1,8 +1,13 @@
 create a file for stash learning
 adding second line in stashfile
 adding thirdline in stashfile 
+<<<<<<< .merge_file_SBXunX
 <<<<<<< HEAD
 welcome  to dark fantasy
 =======
 welcome to valimai team
 >>>>>>> stage
+=======
+welcome  to dark fantasy
+again added new line instashfile
+>>>>>>> .merge_file_Uq9ca0
