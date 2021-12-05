@@ -1,3 +1,7 @@
 Welcome to git world
 Adding second line in now
+<<<<<<< Updated upstream
 adding the line for stage brach
+=======
+added some new line in g1
+>>>>>>> Stashed changes
